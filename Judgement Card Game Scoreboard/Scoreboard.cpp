@@ -1,3 +1,5 @@
+//Judgement Card Game Scoreboard code by ProxyHydra (github.com/ProxyHydra)
+
 #include <iostream>
 using namespace std;
 
@@ -13,7 +15,6 @@ private:
 	int actualwin;
 };
 
-
 int main()
 {
 	Scoreboard player[MAX];
@@ -22,8 +23,18 @@ int main()
 	int totalplayers;
 	cout << "Enter total number of players: ";
 	cin >> totalplayers;
-	cout << totalplayers;
+	cout << "\nTotal number of players: " << totalplayers << endl;
 
 
 	return 0;
+}
+
+void roundsandtrump()
+{
+	int rounds = 8;
+	cout << "Enter total number of rounds (default: 8): ";
+	cin >> rounds;
+	cout << "Number of rounds: " << rounds << endl << endl;
+
+
 }
