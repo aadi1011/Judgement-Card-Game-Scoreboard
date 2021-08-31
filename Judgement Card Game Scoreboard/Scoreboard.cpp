@@ -2,6 +2,7 @@
 
 #include <iostream>
 #include <stdio.h>
+#include <stdlib.h>
 
 using namespace std;
 
@@ -17,19 +18,6 @@ private:
 	int actualwin;
 };
 
-int main()
-{
-	Scoreboard player[MAX];
-	
-	cout << "Welcome to Judgement Scoreboard\n\n";
-	int totalplayers;
-	cout << "Enter total number of players: ";
-	cin >> totalplayers;
-	cout << "\nTotal number of players: " << totalplayers << endl;
-
-
-	return 0;
-}
 
 void roundsandtrump()
 {
@@ -41,12 +29,23 @@ void roundsandtrump()
 	cout << "Number of rounds: " << rounds << endl << endl;
 	for (int i = 0; i < rounds; i++)
 	{
-		if (j==4)
-		{
-			j = 0;
-		}
-		cout << "Trump for this round is: " << trumps[j];
+		
+		cout << "Trump for this round is: " << trumps[j] << endl;
 		j++;
 	}
 
+}
+
+int main()
+{
+	Scoreboard player[MAX];
+	
+	cout << "Welcome to Judgement Scoreboard\n\n";
+	int totalplayers;
+	cout << "Enter total number of players: ";
+	cin >> totalplayers;
+	cout << "\nTotal number of players: " << totalplayers << endl << endl;
+	roundsandtrump();
+
+	return 0;
 }
