@@ -31,7 +31,7 @@ void roundsandtrump()
 	{	
 		cout << "Trump for this round is: " << trumps[j] << endl;
 		j++;
-		if (j == 4)
+		if (j == 4)		//fix for issue #2 (array loop)
 		{
 			j = 0;
 		}
