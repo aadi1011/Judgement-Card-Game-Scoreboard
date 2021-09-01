@@ -28,10 +28,13 @@ void roundsandtrump()
 	string trumps[4] = { "Spades", "Diamonds", "Clubs", "Hearts" };
 	cout << "Number of rounds: " << rounds << endl << endl;
 	for (int i = 0; i < rounds; i++)
-	{
-		
+	{	
 		cout << "Trump for this round is: " << trumps[j] << endl;
 		j++;
+		if (j == 4)
+		{
+			j = 0;
+		}
 	}
 
 }
