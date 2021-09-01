@@ -11,13 +11,25 @@ constexpr auto MAX = 10;
 class Scoreboard
 {
 public:
-	void scoring();
+	void prediction();
+	void winning();
 
 private:
-	int prediction;
-	int actualwin;
+	int predict;
+	int win;
 };
 
+void Scoreboard::prediction()
+{
+	cout << "Enter how many rounds you predict to win: ";
+	cin >> predict;
+}
+
+void Scoreboard::winning()
+{
+	cout << "Enter how many rounds you won: ";
+	cin >> win;
+}
 
 void roundsandtrump()
 {
