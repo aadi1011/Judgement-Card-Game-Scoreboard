@@ -31,36 +31,45 @@ void Scoreboard::winning()
 	cin >> win;
 }
 
-void roundsandtrump()
+void roundsandtrump(int totalplayers)
 {
+	Scoreboard player[MAX];
+
 	int rounds = 8;
-	int j = 0;
+	int j = 0, k = 1;
 	cout << "Enter total number of rounds (default: 8): ";
 	cin >> rounds;
 	string trumps[4] = { "Spades", "Diamonds", "Clubs", "Hearts" };
 	cout << "Number of rounds: " << rounds << endl << endl;
 	for (int i = 0; i < rounds; i++)
 	{	
-		cout << "Trump for this round is: " << trumps[j] << endl;
+		cout << "Round " << i + 1 << "\n";
+		cout << "Trump: " << trumps[j] << endl << endl;
 		j++;
 		if (j == 4)		//fix for issue #2 (array loop)
 		{
 			j = 0;
 		}
+		cout << "Player " << k << endl;
+		player[k].prediction();
+		cout << "\n\n";
+		player[k].winning();
+		k++;
+
+		
+	
 	}
 
 }
 
 int main()
-{
-	Scoreboard player[MAX];
-	
+{	
 	cout << "Welcome to Judgement Scoreboard\n\n";
 	int totalplayers;
 	cout << "Enter total number of players: ";
 	cin >> totalplayers;
 	cout << "\nTotal number of players: " << totalplayers << endl << endl;
-	roundsandtrump();
+	roundsandtrump(totalplayers);
 
 	return 0;
 }
