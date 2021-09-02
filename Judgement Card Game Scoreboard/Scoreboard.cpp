@@ -33,7 +33,6 @@ void Scoreboard::winning()
 
 void roundsandtrump(int totalplayers)
 {
-	Scoreboard player[MAX];
 
 	int rounds = 8;
 	int j = 0, k = 1;
@@ -51,13 +50,6 @@ void roundsandtrump(int totalplayers)
 			j = 0;
 		}
 		cout << "Player " << k << endl;
-		player[k].prediction();
-		cout << "\n\n";
-		player[k].winning();
-		k++;
-
-		
-	
 	}
 
 }
