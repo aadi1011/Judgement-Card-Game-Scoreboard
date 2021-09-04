@@ -1,7 +1,7 @@
 #include <iostream>
 #include <stdio.h>
 #include <stdlib.h>
-#include<vector>
+#include <vector>
 #include <string>
 
 using namespace std;
@@ -20,11 +20,26 @@ void main()
 		cin >> playernames[i];
 	}
 
+	system("cls");
 	cout << "\nPlayer list:\n";
 	for (int i = 0; i < totalplayers; i++)
 	{
 		cout << "Player " << i + 1 << ": " << playernames[i] << endl;
 	}
-	
-	cout << "\n\nsize= " << sizeof(playernames)/sizeof(playernames[0]);
+
+	int rounds;
+	cout << "Enter total number of rounds (default: 8): ";
+	cin >> rounds;
+	cout << "Total rounds: " << rounds;
+	string trumps[4] = { "Spades", "Diamonds", "Clubs", "Hearts" };
+
+	int j = 0;
+	for (int i = 0; i < rounds; i++)
+	{
+		cout << "Round " << i + 1 << "\n";
+		cout << "\nTrump card for the round is: " << trumps[j] << endl;  //INCREMENT J TOO
+		//ADD CODES HERE
+		
+		j++;
+	}
 }
