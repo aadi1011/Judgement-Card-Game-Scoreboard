@@ -7,3 +7,5 @@ Scoreboard maintainer for the card game, Judgement.
   <li>Players: 3+</li>
   <li>Approx time: 30 minutes to 1 hour</li>
   <li>No joker card in deck</li>
+  
+<is>Note: This is just a scoreboard maintainer and not actual game.</I>
