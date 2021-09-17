@@ -40,6 +40,6 @@ void main()
 		cout << "\nTrump card for the round is: " << trumps[j] << endl;  //INCREMENT J TOO
 		//ADD CODES HERE
 		
-		j++;
+		j++; 
 	}
 }
