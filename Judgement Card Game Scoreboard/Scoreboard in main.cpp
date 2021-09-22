@@ -41,7 +41,7 @@ void main()
 		cout << "Round " << i + 1 << "\n";
 		cout << "\nTrump card for the round is: " << trumps[j] << endl;
 		
-
+		cout << "Player " << playernumber + 1 << ": " //LAST EDIT
 		
 		j++;
 		if (j == 4)		//fix for issue #2 (array loop)
