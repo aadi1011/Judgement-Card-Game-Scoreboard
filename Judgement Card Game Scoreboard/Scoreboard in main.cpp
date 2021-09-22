@@ -22,24 +22,31 @@ void main()
 
 	system("cls");
 	cout << "\nPlayer list:\n";
-	for (int i = 0; i < totalplayers; i++)
+	int playernumber = 0;
+	for (int playernumber = 0; playernumber < totalplayers; playernumber++)
 	{
-		cout << "Player " << i + 1 << ": " << playernames[i] << endl;
+		cout << "Player " << playernumber + 1 << ": " << playernames[playernumber] << endl;
 	}
 
 	int rounds;
 	cout << "Enter total number of rounds (default: 8): ";
 	cin >> rounds;
 	cout << "Total rounds: " << rounds;
+
 	string trumps[4] = { "Spades", "Diamonds", "Clubs", "Hearts" };
 
 	int j = 0;
 	for (int i = 0; i < rounds; i++)
 	{
 		cout << "Round " << i + 1 << "\n";
-		cout << "\nTrump card for the round is: " << trumps[j] << endl;  //INCREMENT J TOO
-		//ADD CODES HERE
+		cout << "\nTrump card for the round is: " << trumps[j] << endl;
 		
-		j++; 
+
+		
+		j++;
+		if (j == 4)		//fix for issue #2 (array loop)
+		{
+			j = 0;
+		}
 	}
 }
