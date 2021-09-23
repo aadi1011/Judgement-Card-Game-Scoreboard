@@ -11,7 +11,7 @@ void main()
 	int totalplayers;
 	cout << "Welcome to Judgement Game\n\nEnter the number of players:";
 	cin >> totalplayers;
-	vector<string> playernames(totalplayers);
+	vector<string> playernames(totalplayers); //change
 	cout << "\nEnter names of players:\n";
 	
 	for (int i = 0; i < totalplayers; i++)
@@ -41,7 +41,7 @@ void main()
 		cout << "Round " << i + 1 << "\n";
 		cout << "\nTrump card for the round is: " << trumps[j] << endl;
 		
-		cout << "Player " << playernumber + 1 << ": " //LAST EDIT
+		cout << "Player " << playernumber + 1 << ": "; //LAST EDIT
 		
 		j++;
 		if (j == 4)		//fix for issue #2 (array loop)
