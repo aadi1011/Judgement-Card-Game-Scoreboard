@@ -11,7 +11,7 @@ void main()
 	int totalplayers;
 	cout << "Welcome to Judgement Game\n\nEnter the number of players:";
 	cin >> totalplayers;
-	vector<string> playernames(totalplayers); //change
+	vector<string> playernames(totalplayers);
 	cout << "\nEnter names of players:\n";
 	
 	for (int i = 0; i < totalplayers; i++)
